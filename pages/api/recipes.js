@@ -1,32 +1,31 @@
-// pages/api/records.js
 import {sendMethodNotAllowed, sendOk,} from '@/js/utils/apiMethods.js';
 import {getCollection} from "@/js/utils/functions";
 import {ObjectId,} from 'mongodb';
-const COLLECTION_NAME = 'records';
+const COLLECTION_NAME = 'recipes';
 
-const getRecords = async () => {
+const getRecipes = async () => {
 	const collection = await getCollection(COLLECTION_NAME);
 	return collection.find({}).toArray();
 }
 
-const getRecord = async (id) => {
+const getRecipe = async (id) => {
 	const collection = await getCollection(COLLECTION_NAME);
 	return collection.findOne({_id: new ObjectId(id)});
 }
 
-const postRecord = async (record) => {
+const postRecipe = async (recipes) => {
 	const collection = await getCollection(COLLECTION_NAME);
-	return collection.insertOne(record);
+	return collection.insertOne(recipes);
 }
 
-const putRecord = async (record) => {
+const putRecipe = async (recipes) => {
 	const collection = await getCollection(COLLECTION_NAME);
-	const id = record._id;
-	delete record._id;
-	return collection.updateOne({_id: new ObjectId(id)}, {$set: record});
+	const id = recipes._id;
+	delete recipes._id;
+	return collection.updateOne({_id: new ObjectId(id)}, {$set: recipes});
 }
 
-const deleteRecord = async (id) => {
+const deleteRecipes = async (id) => {
 	const collection = await getCollection(COLLECTION_NAME);
 	return collection.deleteOne({_id: new ObjectId(id)});
 }
@@ -40,26 +39,26 @@ export default async function handler(req, res) {
 
 	if(req.method === 'GET' && req.query.id) {
 		const id = req.query.id;
-		const record = await getRecord(id);
-		return sendOk(res, record);
+		const recipe = await getRecipe(id);
+		return sendOk(res, recipe);
 	}
 	else if(req.method === 'GET') {
-		const records = await getRecords();
-		return sendOk(res, records);
+		const recipes = await getRecipes();
+		return sendOk(res, recipes);
 	}
 	else if(req.method === 'POST') {
-		const record = req.body;
-		const result = await postRecord(record);
+		const recipe = req.body;
+		const result = await postRecipe(recipe);
 		return sendOk(res, result);
 	}
 	else if(req.method === 'PUT') {
-		const record = req.body;
-		const result = await putRecord(record);
+		const recrecipesord = req.body;
+		const result = await putRecipe(recrecipesord);
 		return sendOk(res, result);
 	}
 	else if(req.method === 'DELETE') {
 		const id = req.query.id;
-		const result = await deleteRecord(id);
+		const result = await deleteRecipes(id);
 		return sendOk(res, result);
 	}
 }

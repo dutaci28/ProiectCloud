@@ -1,4 +1,3 @@
-// js/utils/apiMethods.js
 export const sendOk = (res, data) => {
 	res.status(200).json(
 		{
