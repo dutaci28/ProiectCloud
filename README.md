@@ -24,6 +24,18 @@ Baza de date contine obiecte de forma { "name":"X","recipe":"Y" }:
 
 ![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/5fb837ee-0793-429b-8dec-9057f5dc5acf)
 
+Acestea sunt preluate si afisate in pagina principala sub forma de lista.
+
+Cod:
+
+![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/e1d7f474-2be9-47d6-87c9-2c7ae221be82)
+
+Afisare:
+
+![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/18d4d8ed-de5e-4edd-b50f-c4eb2ce6d807)
+
+Aceasta pagina prezinta, in dreptul fiecarei retete, un buton de stergere al acesteia. Acesta face un call de DELETE, ce sterge reteta aferenta.
+
 De asemenea, aplicatia prezinta si functionalitatea de a genera retete folosind API-ul oferit de OpenAI, si anume gpt3.5, la calea "/chat":
 
 https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/chat
@@ -40,13 +52,9 @@ Pentru a vizualiza retetele, vom accesa lista de pe pagina principala. Pagina pr
 
 https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/
 
-![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/b57866ec-da23-46f7-bc0d-e19b15813dcd)
-
 Retetele pot fi introduse de utilizatori prin intermediul paginii de inserare, la calea "/insert", unde este prezent urmatorul formular:
 
 https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/insert
-
-![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/d53625ea-b476-4d82-ba6f-ea00852c9704)
 
 ### 5. Capturi ecran aplicatie
 
