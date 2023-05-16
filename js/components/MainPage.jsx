@@ -34,24 +34,25 @@ export default function MainPage() {
 	}
 
 	return (
-		<section className="bg-white">
-			<h1 className="m-4 text-4xl">The lazy chef app</h1>
-			<p className="m-4 text-2xl">This app is meant for people love food but can't really cook. Here are a couple of easy recipes:</p>
+		<section style={{ backgroundColor: "white" }}>
+			<h1 style={{ margin: "1rem", fontSize: "2.5rem", fontWeight: "bold", color: "#2d3748" }}>The Lazy Chef App</h1>
+			<p style={{ margin: "1rem", fontSize: "1.5rem", color: "#2d3748" }}>This app is meant for people who love food but can't really cook. Here are a couple of easy recipes:</p>
 			{recipes.map(recipe => (
-				<div className="p-3 bg-white shadow hover:bg-gray-200" key={recipe._id}>
-					<h5 className="m-2 text-xl font-bold text-gray-900">
-						{recipe.name + " "}
-						<button type="button"
+				<div key={recipe._id} style={{ padding: "1rem", backgroundColor: "white", boxShadow: "0 1px 2px 0 rgba(0, 0, 0, 0.05)", borderRadius: "0.375rem" }}>
+					<h5 style={{ margin: "0.5rem 0", fontSize: "1.25rem", fontWeight: "bold", color: "#2d3748" }}>
+						{recipe.name}{" "}
+						<button
+							type="button"
 							id={recipe._id}
 							onClick={deleteRecipe}
-							className="bg-orange-400 hover:bg-orange-600 font-medium rounded-lg text-sm px-3 py-1">Delete
+							style={{ backgroundColor: "#ed8936", color: "white", borderRadius: "0.375rem", fontSize: "0.875rem", fontWeight: "medium", padding: "0.5rem 1rem", marginLeft: "1rem" }}>
+							Delete
 						</button>
 					</h5>
-					<p className="text-gray-600">
-						{recipe.recipe}
-					</p>
+					<p style={{ color: "#4a5568", marginTop: "0.5rem" }}>{recipe.recipe}</p>
 				</div>
 			))}
 		</section>
+
 	)
 }
