@@ -16,13 +16,19 @@ Baza de date contine obiecte de forma { "name":"X","recipe":"Y" }:
 
 Pentru a vizualiza aceste date, aplicatia le prezinta sub forma de lista pe pagina principala. Pagina prezinta si functionalitatea de a sterge retete:
 
+https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/
+
 ![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/b57866ec-da23-46f7-bc0d-e19b15813dcd)
 
 Retetele pot fi introduse de utilizatori prin intermediul paginii de inserare, la calea "/insert", unde este prezent urmatorul formular:
 
+https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/insert
+
 ![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/d53625ea-b476-4d82-ba6f-ea00852c9704)
 
 De asemenea, aplicatia prezinta si functionalitatea de a genera retete folosind API-ul oferit de OpenAI, si anume gpt3.5, la calea "/chat":
+
+https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/chat
 
 ![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/50914108-dfb3-4bd7-ac5a-6fe4ed4ac9e9)
 
