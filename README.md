@@ -16,7 +16,7 @@ Proiectul este intitulat "The Lazy Chef" si reprezinta o aplicatie bazata pe cod
 
 -----
 
-Aceasta aplicatie pune la dispozitia utilizatorilor niste retete simple si rapide, menite pentru cei ce prefera sa petreaca mai mult timp mancand decat gatind. Aplicatia este menita pentru utilizatori care duc lipsa de timp liber sau care nu sunt obisnuiti sa gateasca pe perioade indelungate, prezentand retete simple, ce pot fi pregatite intr-un timp scurt.
+Aceasta aplicatie pune la dispozitia utilizatorilor niste retete simple si rapide, menite pentru cei ce prefera sa petreaca mai mult timp mancand decat gatind. Aplicatia este menita pentru utilizatori care duc lipsa de timp liber sau care nu sunt obisnuiti sa gateasca pe perioade indelungate, prezentand retete simple, ce pot fi pregatite intr-un timp scurt. Utilizatorul tinta al aplicatiei este studentul.
 
 ### 3. Descriere API
 
