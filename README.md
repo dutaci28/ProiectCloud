@@ -32,5 +32,6 @@ https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/chat
 
 ![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/50914108-dfb3-4bd7-ac5a-6fe4ed4ac9e9)
 
+API-ul prezinta urmatoarele statistici de utilizare:
 
-
+![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/aee09c7c-0ce5-4404-9611-91bb201b3d53)
