@@ -1,38 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Proiectul este intitulat "The Lazy Chef" si reprezinta o aplicatie bazata pe codul prezentat in cadrul seminarului, ce poate fi vizualizata cu ajutorul platformei Vercel la urmatoarele link-uri:
 
-## Getting Started
+https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/
 
-First, run the development server:
+https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/insert
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/chat
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Aceasta aplicatie pune la dispozitia utilizatorilor niste retete simple si rapide, menite pentru cei ce prefera sa petreaca mai mult timp mancand decat gatind. Pentru a stoca aceste retete, aplicatia foloseste o baza de date MongoDB, prezenta in cloud pe o instanta din AWS:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/fd3a4131-2d70-40c1-a647-3bbc96f3040e)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Baza de date contine obiecte de forma { "name":"X","recipe":"Y" }:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/5fb837ee-0793-429b-8dec-9057f5dc5acf)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Pentru a vizualiza aceste date, aplicatia le prezinta sub forma de lista pe pagina principala. Pagina prezinta si functionalitatea de a sterge retete:
 
-## Learn More
+![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/b57866ec-da23-46f7-bc0d-e19b15813dcd)
 
-To learn more about Next.js, take a look at the following resources:
+Retetele pot fi introduse de utilizatori prin intermediul paginii de inserare, la calea "/insert", unde este prezent urmatorul formular:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/d53625ea-b476-4d82-ba6f-ea00852c9704)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+De asemenea, aplicatia prezinta si functionalitatea de a genera retete folosind API-ul oferit de OpenAI, si anume gpt3.5, la calea "/chat":
 
-## Deploy on Vercel
+![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/50914108-dfb3-4bd7-ac5a-6fe4ed4ac9e9)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
