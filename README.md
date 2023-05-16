@@ -8,13 +8,19 @@ LINK PUBLICARE: https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/
 
 ### 1. Introducere
 
+-----
+
 Proiectul este intitulat "The Lazy Chef" si reprezinta o aplicatie bazata pe codul prezentat in cadrul seminarului, ce poate fi vizualizata cu ajutorul platformei Vercel (prezenta la sectiunea "LINK PUBLICARE").
 
 ### 2. Descriere Problema
 
+-----
+
 Aceasta aplicatie pune la dispozitia utilizatorilor niste retete simple si rapide, menite pentru cei ce prefera sa petreaca mai mult timp mancand decat gatind.
 
 ### 3. Descriere API
+
+-----
 
 Pentru a stoca retete, aplicatia foloseste o baza de date MongoDB, prezenta in cloud pe o instanta din AWS:
 
@@ -56,6 +62,8 @@ API-ul prezinta urmatoarele statistici de utilizare:
 
 ### 4. Flux de date
 
+-----
+
 Pentru a vizualiza retetele, vom folosi un GET catre "/api/recipes":
 
 ![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/4b4276ba-81a9-44c0-979e-860e7e6ce803)
@@ -63,6 +71,8 @@ Pentru a vizualiza retetele, vom folosi un GET catre "/api/recipes":
 Ce va returna un payload de forma:
 
 ![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/64bd6874-2bb2-4ad1-b248-ae06451e05a6)
+
+-----
 
 Pentru a publica o reteta, vom folosi un POST catre "/api/recipes":
 
@@ -72,6 +82,8 @@ Cu un payload de forma:
 
 ![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/3423b282-29f8-4d07-a5d5-a5b828a5e8e7)
 
+-----
+
 Pentru a sterge o reteta, vom folosi un DELETE catre "/api/recipes?id=...":
 
 ![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/c1dbb635-04ea-4966-9c64-9a8dde8ba9d0)
@@ -80,11 +92,31 @@ Ce va returna un payload de forma:
 
 ![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/bae14bfe-6a42-4276-a47c-25b5ac3be91e)
 
+-----
+
+Pentru a primi un mesaj generat de catre gpt3.5, vom folosi un POST catre "/api/answer":
+
+![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/4a27fad0-7fe0-4239-8bc2-7b3e22206938)
+
+La care vom atasa un request de forma:
+
+![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/9642c33d-28aa-4679-930a-d89590769655)
+
+Si la care ni se va raspunde cu un payload:
+
+![image](https://github.com/dutaci28/ProiectCloud/assets/69631672/8abf496a-7415-4fa1-a734-854698e3b3df)
+
+-----
+
 ### 5. Capturi ecran aplicatie
+
+-----
 
 Capturile de ecran din aplicatie au fost introduse in celelalte capitole, in locurile aferente.
 
 ### 6. Referinte
+
+-----
 
 https://gurita-alexandru.gitbook.io/cloud-computing-2023-simpre/
 
