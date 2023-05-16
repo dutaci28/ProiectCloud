@@ -2,7 +2,7 @@
 
 ## Duta Catalin-Ionut, gr. 1119
 
-LINK VIDEO: 
+LINK VIDEO: https://www.youtube.com/watch?v=8EBNTL6juII
 
 LINK PUBLICARE: https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/
 
