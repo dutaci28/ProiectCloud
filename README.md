@@ -1,10 +1,12 @@
-Proiectul este intitulat "The Lazy Chef" si reprezinta o aplicatie bazata pe codul prezentat in cadrul seminarului, ce poate fi vizualizata cu ajutorul platformei Vercel la urmatoarele link-uri:
+# "The Lazy Chef"
 
-https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/
+## Duta Catalin-Ionut, gr. 1119
 
-https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/insert
+LINK VIDEO: 
 
-https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/chat
+LINK PUBLICARE: https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/
+
+Proiectul este intitulat "The Lazy Chef" si reprezinta o aplicatie bazata pe codul prezentat in cadrul seminarului, ce poate fi vizualizata cu ajutorul platformei Vercel.
 
 Aceasta aplicatie pune la dispozitia utilizatorilor niste retete simple si rapide, menite pentru cei ce prefera sa petreaca mai mult timp mancand decat gatind. Pentru a stoca aceste retete, aplicatia foloseste o baza de date MongoDB, prezenta in cloud pe o instanta din AWS:
 
