@@ -18,9 +18,10 @@ export default function InsertPage() {
 
 	return (
 		<section style={{ backgroundColor: "white" }}>
-			<h1 style={{ margin: "1rem", fontSize: "2.5rem", fontWeight: "bold", color: "#2d3748" }}>The Lazy Chef App</h1>
-			<p style={{ margin: "1rem", fontSize: "1.5rem", color: "#2d3748" }}>Here you can add your own recipes:</p>
-
+			<div style={{ padding: '16px', fontSize: '24px', fontWeight: 600, color: '#2e2e2e', borderBottom: '1px solid #e5e5e5' }}>
+				<h1 style={{ margin: "1rem", fontSize: "2.5rem", fontWeight: "bold", color: "#2d3748" }}>The Lazy Chef App</h1>
+				<p style={{ margin: "1rem", fontSize: "1.5rem", color: "#2d3748" }}>Here you can add your own recipes:</p>
+			</div>
 			<form>
 				<div style={{ margin: "1.5rem" }}>
 					<label htmlFor="name" style={{ display: "block", marginBottom: "0.5rem", fontSize: "0.875rem", fontWeight: "500", color: "#374151" }}>

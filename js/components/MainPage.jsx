@@ -35,8 +35,10 @@ export default function MainPage() {
 
 	return (
 		<section style={{ backgroundColor: "white" }}>
-			<h1 style={{ margin: "1rem", fontSize: "2.5rem", fontWeight: "bold", color: "#2d3748" }}>The Lazy Chef App</h1>
-			<p style={{ margin: "1rem", fontSize: "1.5rem", color: "#2d3748" }}>This app is meant for people who love food but can't really cook. Here are a couple of easy recipes:</p>
+			<div style={{ padding: '16px', fontSize: '24px', fontWeight: 600, color: '#2e2e2e', borderBottom: '1px solid #e5e5e5' }}>
+				<h1 style={{ margin: "1rem", fontSize: "2.5rem", fontWeight: "bold", color: "#2d3748" }}>The Lazy Chef App</h1>
+				<p style={{ margin: "1rem", fontSize: "1.5rem", color: "#2d3748" }}>This app is meant for people who love food but can't really cook. Here are a couple of easy recipes:</p>
+			</div>
 			{recipes.map(recipe => (
 				<div key={recipe._id} style={{ padding: "1rem", backgroundColor: "white", boxShadow: "0 1px 2px 0 rgba(0, 0, 0, 0.05)", borderRadius: "0.375rem" }}>
 					<h5 style={{ margin: "0.5rem 0", fontSize: "1.25rem", fontWeight: "bold", color: "#2d3748" }}>
