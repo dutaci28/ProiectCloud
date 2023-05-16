@@ -53,7 +53,7 @@ function ChatComponent(props) {
 					},
 					body: JSON.stringify({
 						messages: filteredChatHistory,
-						type: 'michael_scott',
+						type: 'simple_assistant',
 					}),
 					signal: AbortSignal.timeout(20000),
 				});
@@ -73,11 +73,11 @@ function ChatComponent(props) {
 	}
 
 	return (
-		<div className={"w-full max-w-[1500px] mx-auto my-10"}>
-			<div className={"border border-b-0 rounded-lg border-gray-300'"}>
-				<div className={'border-b text-center px-[20px] py-[10px]'}>
+		<div className={"w-full"}>
+			<div >
+				<div>
 					<span className={'text-md font-bold text-gray-900'}>
-						This a chat component that looks like Yahoo!
+						Here you can get randomly generated recipes!
 					</span>
 				</div>
 				<MessageBox chatMessages={chatMessages}/>

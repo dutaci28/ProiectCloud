@@ -12,23 +12,23 @@ function MessageBox(props) {
 	}, [chatMessages]);
 
 	return (
-		<div className={'h-[400px] overflow-auto px-[20px]'}>
-			<ul className={'divide-y divide-gray-200'}>
+		<div className={'overflow-auto px-[20px]'}>
+			<ul>
 				<li className={ 'py-3' }>
-							<span className={ `block text-green-800 font-bold` }>
-								ChatGPT:
+							<span className={ `block font-bold` }>
+								Your assistant:
 							</span>
 					<span className={ 'block' }>
-								Hi, I am a ChatBot. How can I help you?
+								Hi, I can help you with some recipes, you just need to ask!
 							</span>
 				</li>
 				{
 					chatMessages.map((message, index) => {
 						return (
 							<li className={'py-3'} key={index}>
-								<span className={ `block ${message.role === 'assistant' ? 'text-green-800' : 'text-blue-800'} font-bold` }>
+								<span className={ `block font-bold` }>
 									{
-										message.role === 'assistant' ? 'ChatGPT:' : 'You:'
+										message.role === 'assistant' ? 'Your assistant:' : 'You:'
 									}
 								</span>
 								<span className={ 'block' }>
