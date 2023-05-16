@@ -10,13 +10,13 @@ LINK PUBLICARE: https://proiect-cloud-hjwjzsq0r-dutaci28.vercel.app/
 
 -----
 
-Proiectul este intitulat "The Lazy Chef" si reprezinta o aplicatie bazata pe codul prezentat in cadrul seminarului, ce poate fi vizualizata cu ajutorul platformei Vercel (prezenta la sectiunea "LINK PUBLICARE").
+Proiectul este intitulat "The Lazy Chef" si reprezinta o aplicatie bazata pe codul prezentat in cadrul seminarului, ce poate fi vizualizata cu ajutorul platformei Vercel (prezenta la sectiunea "LINK PUBLICARE"). Aplicatia foloseste o baza de date MongoDB, stocata in cloud pe o instanta Amazon Web Services. Aplicatia foloseste, de asemenea, API-ul gpt3.5 oferit de catre OpenAI.
 
 ### 2. Descriere Problema
 
 -----
 
-Aceasta aplicatie pune la dispozitia utilizatorilor niste retete simple si rapide, menite pentru cei ce prefera sa petreaca mai mult timp mancand decat gatind.
+Aceasta aplicatie pune la dispozitia utilizatorilor niste retete simple si rapide, menite pentru cei ce prefera sa petreaca mai mult timp mancand decat gatind. Aplicatia este menita pentru utilizatori care duc lipsa de timp liber sau care nu sunt obisnuiti sa gateasca pe perioade indelungate, prezentand retete simple, ce pot fi pregatite intr-un timp scurt.
 
 ### 3. Descriere API
 
